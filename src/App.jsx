@@ -25,9 +25,9 @@ function App() {
 
   return (
     <div className="w-full h-screen flex">
-       {/* Left Section - Cool Image */}
-       <div
-        className="w-1/2 h-full bg-cover bg-center"
+      {/* Left Section - Cool Image */}
+      <div
+        className="sm:block hidden w-1/2 h-full bg-cover bg-center"
         style={{
           backgroundImage: `url('https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
         }}
@@ -79,8 +79,6 @@ function App() {
           </form>
         </div>
       </div>
-
-     
     </div>
   );
 }
