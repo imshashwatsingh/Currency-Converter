@@ -24,16 +24,16 @@ function App() {
   };
 
   return (
-    <div className="w-full h-screen flex">
+    <div className="w-full h-screen flex flex-col lg:flex-row">
       {/* Left Section - Cool Image */}
       <div
-        className="sm:block hidden w-1/2 h-full bg-cover bg-center"
+        className="hidden lg:block lg:w-1/2 h-full bg-cover bg-center"
         style={{
           backgroundImage: `url('https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
         }}
       ></div>
       {/* Right Section - Shaded Background */}
-      <div className="w-1/2 h-full flex items-center justify-center bg-gradient-to-b from-gray-700 to-blue-400">
+      <div className="w-full lg:w-1/2 h-full flex items-center justify-center bg-gradient-to-b from-gray-700 to-blue-400">
         <div className="w-4/5 max-w-md bg-white/20 backdrop-blur-sm p-6 rounded-lg shadow-lg">
           <form
             onSubmit={(e) => {
